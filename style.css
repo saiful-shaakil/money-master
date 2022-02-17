@@ -64,3 +64,8 @@ p > input{
 .btn:hover{
     background-color: aqua;
 }
+
+.notify{
+    text-align: center;
+    display: none;
+}
