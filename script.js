@@ -37,14 +37,19 @@ document.getElementById('save-btn').addEventListener('click', function () {
     const saveInput = save.value;
     const incomeInput = income.value;
     document.getElementById('message').style.display = 'none';
-    savingAmount.innerText = (parseFloat(incomeInput) / 100) * parseFloat(saveInput);
-    remainingAmount.innerText = parseFloat(balance.innerText) - parseFloat(savingAmount.innerText);
+    newSavingAmount = (parseFloat(incomeInput) / 100) * parseFloat(saveInput);
+    newRemainingAmount = parseFloat(balance.innerText) - newSavingAmount;
+    console.log(newRemainingAmount);
+    savingAmount.innerText = newSavingAmount;
+    remainingAmount.innerText = newRemainingAmount;
+
+
     if (savingAmount.innerText > balance.innerText || remainingAmount.innerText < 0 || balance.innerText < 0) {
         document.getElementById('message').style.display = 'block';
         remainingAmount.innerText = 0;
         savingAmount.innerText = 0;
     }
-    else if (save.value == '' && balance.innerText == 0) {
+    else if ((save.value == '' && balance.innerText == 0) || save.value < 0) {
         alert('invalid number');
         remainingAmount.innerText = 0;
         savingAmount.innerText = 0;
