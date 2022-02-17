@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator of Daily Life Expenses</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
 </head>
 
 <body>
@@ -37,7 +38,9 @@
 
                     <button id="calculate" class="btn">Calculate</button>
 
-                    <h3>Total Expenses: <span id="total">0</span></h3>
+                    <p id="notifi">Please fill in the gap by real number</p>
+
+                    <h3>Total Expenses: <span id="total-expenses">0</span></h3>
 
                     <h3>Balance: <span id="balance">0</span></h3>
 
@@ -48,6 +51,7 @@
                     <h3>Saving Amount: <span id="saving-amount">0</span></h3>
 
                     <h3>Remaining Balance: <span id="remaining-amount">0</span></h3>
+                    <p id="message" class="notify">Sorry! You can't save money if you haven't enough balance.</p>
 
                 </div>
             </div>
@@ -59,7 +63,7 @@
     <!-- footer section -->
     <footer>
         <div>
-            <p class="notify">Sorry! You can't save more than your remaining balance.</p>
+
         </div>
     </footer>
 
