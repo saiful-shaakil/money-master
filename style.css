@@ -10,6 +10,10 @@ h1{
     text-align: center;
     color: rgb(20, 202, 202);
 }
+main{
+    display: flex;
+    justify-content: center;
+}
 .calculate-section{
     width: 90%;
     display: flex;
@@ -23,6 +27,40 @@ h1{
     width: 90%;
     height: 600px;
 }
+
+/* calculator side style */
+
 .calculate-side{
     width: 50%;
+    text-align: center;
+    background-color: rgba(84, 85, 85, 0.322);
+}
+h3{
+    font-size: 20px;
+}
+p{
+    font-size: 18px;
+    font-weight: 500;
+}
+p > input{
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
+    padding: 3px;
+    outline: none;
+}
+.btn{
+    width: 130px;
+    padding: 10px;
+    background-color: rgb(91, 203, 223);
+    color: white;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+.btn:hover{
+    background-color: aqua;
 }
