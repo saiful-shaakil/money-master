@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    color: rgb(20, 202, 202);
+}
+.calculate-section{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo-side{
+    width: 50%;
+}
+.photo-side img{
+    width: 90%;
+    height: 600px;
+}
+.calculate-side{
+    width: 50%;
+}
