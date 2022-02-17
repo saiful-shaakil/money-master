@@ -39,7 +39,7 @@ document.getElementById('save-btn').addEventListener('click', function () {
     document.getElementById('message').style.display = 'none';
     savingAmount.innerText = (parseFloat(incomeInput) / 100) * parseFloat(saveInput);
     remainingAmount.innerText = parseFloat(balance.innerText) - parseFloat(savingAmount.innerText);
-    if (savingAmount.innerText > balance.innerText || balance.innerText < 0) {
+    if (savingAmount.innerText > balance.innerText || remainingAmount.innerText < 0 || balance.innerText < 0) {
         document.getElementById('message').style.display = 'block';
         remainingAmount.innerText = 0;
         savingAmount.innerText = 0;
